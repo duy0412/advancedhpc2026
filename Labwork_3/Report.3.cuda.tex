@@ -4,7 +4,7 @@
 \usepackage[strings]{underscore}
 
 \begin{document}
-\section{1. Time for CPU Conversion}
+\section{Time for CPU Conversion}
 \begin{lstlisting}[language=Python]
 height = img.shape[0]
 width = img.shape[1]
@@ -32,7 +32,7 @@ print(f"CPU time: {end - start:.6f} seconds")
 -> Results: CPU time: 0.266899 seconds
 \end{verbatim}
 
-\section{2. Time for GPU Conversion}
+\section{Time for GPU Conversion}
 \begin{lstlisting}[language=Python]
 @cuda.jit
 def grayscale_kernel(input_img, output_img):
@@ -68,7 +68,7 @@ Explaination:
 -> Results: GPU time: 0.056622 seconds
 \end{verbatim}
 
-\section{3. Block size vs Time}
+\section{Block size vs Time}
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.85\textwidth]{block_size_vs_time.png}
